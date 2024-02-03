@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" type="text/css" href="/Styles.css">
+</head>
+
+<body>
+
+    <div>
+
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres">
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos">
+
+        <label>Genero:</label>
+        <label for="masculino"><input type="radio" id="masculino" name="genero" value="masculino">
+            Masculino</label>
+        <label for="femenino"><input type="radio" id="femenino" name="genero" value="femenino">
+            Femenino</label>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono">
+
+        <label for="tipo_documento">Tipo de Documento:</label>
+        <select id="tipo_documento" name="tipo_documento" required>
+            <option value="Cedula de Ciudadania">Cedula de Ciudadania</option>
+            <option value="Tarjeta de Identidad">Tarjeta de indentidad</option>
+            <option value="cedula de Extranjeria">Cedula de Extranjeria</option>
+            <option value="Pasaporte">Pasaporte</option>
+
+            <label for="numero_documento">Número de Documento:</label>
+            <input type="text" id="numero_documento" name="numero_documento">
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+
+
+            <button onclick="enviar()">Enviar</button>
+        </div>
+
+</body>
+
+<script>
+    function enviar() {
+        let nombre = document.getElementById("nombres").value;
+        let apellidos = document.getElementById("apellidos").value;
+        let genero = "";
+        let telefono = document.getElementById("telefono").value;
+        if (document.getElementById("masculino").checked) {
+            genero = "Masculino"
+        } else {
+            genero = "Femenino"
+        }
+
+
+        let datos = {}
+        datos = {
+            genero: genero,
+            tipodoc: document.getElementById("tipo_documento").value
+        }
+
+
+        let data = []
+        data.push(datos)
+        console.log(data)
+    }
+
+
+
+</script>
+
+</html>
+
+<!-- <label for="tipo_documento">Tipo de Documento:</label>
+<select id="tipo_documento" name="tipo_documento" required>
+    <option value="cedula_de_ciudania">Cedula de Ciudadania</option>
+    <option value="tarjeta_de_identidad">Tarjeta de indentidad</option>
+    <option value="cedula_de_extranjeria">Cedula de Extranjeria</option>
+    <option value="pasaporte">Pasaporte</option>
+</select> -->

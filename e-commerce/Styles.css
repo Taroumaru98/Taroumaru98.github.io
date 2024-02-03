@@ -1,0 +1,166 @@
+
+.fondo {
+    background-color: #f0f0f0;
+    width: 70%;
+display: flex;
+justify-content: center;
+}
+
+.Container_1 {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.barra_1 {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding-left: 15px;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+.camisa{
+    color: #0077ff;
+    align-items: center;
+    font-weight: bold;
+}
+
+.barra_1 a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.separador {
+    color: #333;
+    margin: 0 7px;
+}
+
+.banner_1 {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 30px; 
+}
+
+.banner_grande {
+    width: 60%;
+    height: 450px;
+    margin: 4px 4px 8px 13px;
+    
+}
+
+.banner_2 {
+    width: 400px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner_pequeño {
+    width: 400px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color:#fff; 
+    margin: 5px 100px 50px 100px; ;
+}
+
+.nuevos_productos{
+    font-size: 13px;
+    color: #777;
+    margin: 13px;
+}
+
+.productos_especiales{
+    font-size: 13px;
+    color: #777;
+    margin: 13px;
+}
+
+.fila {
+    text-align: center;
+    margin: 40px;
+}
+
+.fila h2 {
+    font-size: 24px;
+}
+
+.fila hr {
+    width: 50%;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+}
+
+.columna {
+    width: 23%;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+img {
+    max-width: 100%;
+}
+
+.banners_inferiores {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.bannerinf {
+    width: 400px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.columna_1,
+.columna_2,
+.columna_3,
+.columna_4 {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333232;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    color:#888;
+}

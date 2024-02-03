@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    background-image: url("./Links/coonstelacion.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#portafolio {
+    max-width: 1100px;
+    padding: 85px 0;
+    margin: auto;
+}
+
+#portafolio .mis_proyectos {
+    text-align: center;
+    font-size: 22px;
+    color: #666666;
+}
+
+#portafolio .fila {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 0;
+}
+
+#portafolio .fila .proyectos {
+    max-width: 450px;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#portafolio .fila .proyectos img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    transition: .5s;
+}
+
+#portafolio .fila .proyectos .descripcion {
+    position: absolute;
+    left: 0px;
+    background-color: #333333;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -30px;
+    transition: .5s;
+}
+
+#portafolio .fila .proyectos:hover img {
+    filter: grayscale(0);
+}
+
+#portafolio .fila .proyectos:hover .descripcion {
+    opacity: 1;
+    bottom: 0
+}
